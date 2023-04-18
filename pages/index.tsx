@@ -1,6 +1,7 @@
 import { Button } from "../components/button/button";
 import { Htag } from "../components/htag/htag";
 import { Paragraph } from "../components/paragraph/paragraph";
+import { Tag } from "../components/tag/tag";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Paragraph size={"small"}>Small</Paragraph>
       <Paragraph>Medium</Paragraph>
       <Paragraph size={"big"}>Big</Paragraph>
+      <Tag size="small" color="red" href="vk.com">test</Tag>
     </>
   );
 }
