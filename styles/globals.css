@@ -24,6 +24,7 @@ body {
   color: var(--black);
   background: var(--main);
   font-family: var(--font-family);
+ 
 }
 
 a {
