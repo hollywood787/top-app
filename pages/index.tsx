@@ -3,8 +3,10 @@ import { Htag } from "../components/htag/htag";
 import { Paragraph } from "../components/paragraph/paragraph";
 import { Tag } from "../components/tag/tag";
 import { Rating } from "../components/rating/rating";
+import { withLayout } from "../layout/layoutHOC";
 
-export default function Home() {
+
+function Home() {
   return (
     <>
       <Htag tag={"h1"}>kek</Htag>
@@ -17,8 +19,12 @@ export default function Home() {
       <Paragraph size={"small"}>Small</Paragraph>
       <Paragraph>Medium</Paragraph>
       <Paragraph size={"big"}>Big</Paragraph>
-      <Tag size="small" color="red" href="vk.com">test</Tag>
-      <Rating isEditable={true} rating={4}/>
+      <Tag size="small" color="red" href="vk.com">
+        test
+      </Tag>
+      <Rating isEditable={true} rating={4} />
     </>
   );
 }
+
+export default withLayout(Home);
