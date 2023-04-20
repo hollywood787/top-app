@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import styles from "./sidebar.module.css";
 
-function Sidebar() {
-  return <div>Sidebar</div>;
+function Sidebar({ ...props }) {
+  return <div { ...props }>Sidebar</div>;
 }
 
 export { Sidebar };
